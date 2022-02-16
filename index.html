@@ -31,12 +31,13 @@
                 <div class="col border mx-5 d-flex flex-column align-items-center bg-light">
                     <!-- Income headline-->
                     <h3 class="mt-2 mb-4">Income</h3>
+                    <!-- Income -->
                     <div class="row g-3 align-items-center">
                         <div class="col-auto">
                             <label for="inputPassword6" class="col-form-label fw-bold">Income</label>
                         </div>
                         <div class="col-auto">
-                            <input class="form-control" aria-describedby="passwordHelpInline">
+                            <input id="income-input" class="form-control" aria-describedby="passwordHelpInline">
                         </div>
                     </div>
 
@@ -49,21 +50,21 @@
                             <label class="col-form-label fw-bold">Clothes</label>
                         </div>
                         <div class="col-auto">
-                            <input class="form-control" aria-describedby="passwordHelpInline">
-                            <input class="form-control my-4" aria-describedby="passwordHelpInline">
-                            <input class="form-control" aria-describedby="passwordHelpInline">
+                            <input id="food-input" class="form-control" aria-describedby="passwordHelpInline">
+                            <input id="rent-input" class="form-control my-4" aria-describedby="passwordHelpInline">
+                            <input id="clothes-input" class="form-control" aria-describedby="passwordHelpInline">
                         </div>
                     </div>
 
                     <!-- Calculate Button -->
                     <div>
-                        <button type="button" class="btn btn-primary my-4 px-4">Calculate</button>
+                        <button id="calculate-button" type="button" class="btn btn-primary my-4 px-4">Calculate</button>
                     </div>
 
                     <!-- Total Expenses -->
                     <div>
-                        <h4 class="mb-3">Total Expenses: $<span>0</span></h4>
-                        <h4>Balance: $<span>0</span></h4>
+                        <h4 class="mb-3">Total Expenses: $<span id="total-expenses">0</span></h4>
+                        <h4>Balance: $<span id="total-balance">0</span></h4>
                     </div>
 
                     <!-- Save -->
@@ -73,17 +74,17 @@
                                 <label for="inputPassword6" class="col-form-label fw-bold">Save</label>
                             </div>
                             <div class="col-auto d-flex">
-                                <input class="form-control" aria-describedby="passwordHelpInline">
+                                <input id="saving-input" class="form-control" aria-describedby="passwordHelpInline">
                                 <h2 class="mx-3">%</h2>
-                                <button type="button" class="btn btn-primary px-4">Calculate</button>
+                                <button id="save-button" type="button" class="btn btn-primary px-4">Save</button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Saving Amount -->
                     <div class="my-4">
-                        <h4 class="mb-3">Saving Amount: <span>0</span></h4>
-                        <h4>Remaining Balance: <span>0</span></h4>
+                        <h4 class="mb-3">Saving Amount: <span id="saving-amount">0</span></h4>
+                        <h4>Remaining Balance: <span id="remaining-balance">0</span></h4>
                     </div>
                 </div>
             </div>
