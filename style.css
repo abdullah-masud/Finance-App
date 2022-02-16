@@ -3,3 +3,10 @@
 .header {
     color: #31A5AC;
 }
+
+
+/* Block element */
+
+.block {
+    display: none;
+}

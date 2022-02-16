@@ -1,8 +1,17 @@
-/* Handle Calculate button */
-document.getElementById('calculate-button').addEventListener('click', function() {
+/* Income Input function */
+function incomeInput() {
     const incomeInputField = document.getElementById('income-input');
     const incomePrice = parseFloat(incomeInputField.value);
+    if (incomePrice < 0 || isNaN(incomePrice)) {
+        const warnMessage = document.getElementById('block');
+        warnMessage.style.display = 'block'
+        warnMessage.style.color = 'red'
+    } else {
+        return incomePrice;
+    }
+}
 
+function addExpenses() {
     const foodInputField = document.getElementById('food-input');
     const foodPrice = parseFloat(foodInputField.value);
 
@@ -13,6 +22,14 @@ document.getElementById('calculate-button').addEventListener('click', function()
     const clothesPrice = parseFloat(clothesInputField.value);
 
     const total = foodPrice + rentPrice + clothesPrice;
+    return total
+}
+
+/* Handle Calculate button */
+document.getElementById('calculate-button').addEventListener('click', function() {
+    const incomePrice = incomeInput()
+
+    const total = addExpenses()
     const balance = incomePrice - total
 
     const totalExpenses = document.getElementById('total-expenses');
@@ -24,8 +41,7 @@ document.getElementById('calculate-button').addEventListener('click', function()
 
 /* Handle Save Button */
 document.getElementById('save-button').addEventListener('click', function() {
-    const incomeInputField = document.getElementById('income-input');
-    const incomePrice = parseFloat(incomeInputField.value);
+    const incomePrice = incomeInput()
 
     const savingInputField = document.getElementById('saving-input');
     const savingValue = parseFloat(savingInputField.value);
