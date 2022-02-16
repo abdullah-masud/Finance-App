@@ -88,4 +88,8 @@ document.getElementById('save-button').addEventListener('click', function() {
         remainingBalanceField.innerText = remaining.toFixed(2)
         warnMessage.style.display = 'none'
     }
+    if (isNaN(savingValue) || savingValue < 0) {
+        savingAmountField.innerText = "";
+        remainingBalanceField.innerText = "";
+    }
 })

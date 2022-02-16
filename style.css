@@ -1,12 +1,29 @@
-/* Header styles */
-
-.header {
-    color: #31A5AC;
-}
-
-
-/* Block element */
-
-.block {
-    display: none;
-}
+    /* Header styles */
+    
+    .header {
+        color: #31A5AC;
+    }
+    /* Block element */
+    
+    .block {
+        display: none;
+    }
+    /* Mobile devices */
+    
+    @media only screen and (max-width: 688px) {
+        body,
+        html {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        .expenses {
+            /* background-color: red; */
+            display: flex;
+        }
+        .expense-input {
+            width: 180px;
+        }
+        .main-image {
+            margin-bottom: 40px;
+        }
+    }
