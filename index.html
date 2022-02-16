@@ -24,19 +24,19 @@
         <div class="container ">
             <div class="row ">
                 <!-- Columne 1 -->
-                <div class="col border mx-5 ">
-                    <img class="img-fluid " src="images/money2.png " alt=" ">
+                <div class="col border mx-5 d-flex ">
+                    <img class="img-fluid" src="images/money2.png " alt=" ">
                 </div>
                 <!-- Columne 2 -->
-                <div class="col border mx-5 d-flex flex-column align-items-center">
+                <div class="col border mx-5 d-flex flex-column align-items-center bg-light">
                     <!-- Income headline-->
                     <h3 class="mt-2 mb-4">Income</h3>
                     <div class="row g-3 align-items-center">
                         <div class="col-auto">
-                            <label for="inputPassword6" class="col-form-label">Income</label>
+                            <label for="inputPassword6" class="col-form-label fw-bold">Income</label>
                         </div>
                         <div class="col-auto">
-                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                            <input class="form-control" aria-describedby="passwordHelpInline">
                         </div>
                     </div>
 
@@ -44,30 +44,47 @@
                     <h3 class="mt-4 mb-4">Expenses</h3>
                     <div class="row g-3 align-items-center">
                         <div class="col-auto d-flex flex-column">
-                            <label for="inputPassword6" class="col-form-label">Food</label>
-                            <label for="inputPassword6" class="col-form-label my-4">Rent</label>
-                            <label for="inputPassword6" class="col-form-label">Clothes</label>
+                            <label class="col-form-label fw-bold">Food</label>
+                            <label class="col-form-label my-4 fw-bold">Rent</label>
+                            <label class="col-form-label fw-bold">Clothes</label>
                         </div>
                         <div class="col-auto">
-                            <input type="password" class="form-control" aria-describedby="passwordHelpInline">
-                            <input type="password" class="form-control my-4" aria-describedby="passwordHelpInline">
-                            <input type="password" class="form-control" aria-describedby="passwordHelpInline">
+                            <input class="form-control" aria-describedby="passwordHelpInline">
+                            <input class="form-control my-4" aria-describedby="passwordHelpInline">
+                            <input class="form-control" aria-describedby="passwordHelpInline">
                         </div>
                     </div>
 
-                    <!-- Button -->
+                    <!-- Calculate Button -->
                     <div>
                         <button type="button" class="btn btn-primary my-4 px-4">Calculate</button>
                     </div>
 
                     <!-- Total Expenses -->
                     <div>
-                        <h4 class="mb-3">Total Expenses: <span>2000</span></h4>
-                        <h4>Balance: <span>12000</span></h4>
+                        <h4 class="mb-3">Total Expenses: $<span>0</span></h4>
+                        <h4>Balance: $<span>0</span></h4>
                     </div>
 
                     <!-- Save -->
+                    <div class="mt-4">
+                        <div class="row g-3 align-items-center">
+                            <div class="col-auto ">
+                                <label for="inputPassword6" class="col-form-label fw-bold">Save</label>
+                            </div>
+                            <div class="col-auto d-flex">
+                                <input class="form-control" aria-describedby="passwordHelpInline">
+                                <h2 class="mx-3">%</h2>
+                                <button type="button" class="btn btn-primary px-4">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Saving Amount -->
+                    <div class="my-4">
+                        <h4 class="mb-3">Saving Amount: <span>0</span></h4>
+                        <h4>Remaining Balance: <span>0</span></h4>
+                    </div>
                 </div>
             </div>
         </div>
