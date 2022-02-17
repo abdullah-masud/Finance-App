@@ -29,12 +29,12 @@ function addExpenses() {
 
     if (foodPrice < 0 || isNaN(foodPrice) || rentPrice < 0 || isNaN(rentPrice) || clothesPrice < 0) {
         warningMessage('block')
-
     } else {
         const total = foodPrice + rentPrice + clothesPrice;
         return total
     }
 }
+
 
 /* Handle Calculate button */
 document.getElementById('calculate-button').addEventListener('click', function() {
