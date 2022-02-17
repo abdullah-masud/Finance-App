@@ -81,11 +81,11 @@ document.getElementById('save-button').addEventListener('click', function() {
 
     const warnMessage2 = document.getElementById('block2');
     if (savings > totalBalance) {
+        warnMessage2.innerText = "You don't have enough balance to save"
         warnMessage2.style.display = 'block'
         warnMessage2.style.color = 'red'
         savingAmountField.innerText = "";
         remainingBalanceField.innerText = "";
-
     } else if (savings < totalBalance) {
         savingAmountField.innerText = savings.toFixed(2)
         const remaining = totalBalance - savings
