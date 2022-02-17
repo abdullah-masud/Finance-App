@@ -23,6 +23,12 @@
         .expense-input {
             width: 180px;
         }
+        .expenses .income-field {
+            width: 180px;
+        }
+        .expenses .save-field {
+            width: 230px;
+        }
         .main-image {
             margin-bottom: 40px;
         }
