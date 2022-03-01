@@ -8,7 +8,7 @@
     .block {
         display: none;
     }
-    /* Mobile devices */
+    /* Mobile devices Styles*/
     
     @media only screen and (max-width: 688px) {
         body,
